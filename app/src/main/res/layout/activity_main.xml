@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16sp"
         android:hint="@string/fahrenheit_temperature_text"
+        android:inputType="numberDecimal"
         android:textSize="26sp" />
 
     <TextView

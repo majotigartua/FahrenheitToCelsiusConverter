@@ -22,10 +22,8 @@ public class MainActivity extends AppCompatActivity {
             String fahrenheitTemperatureInText = fahrenheitTemperatureEditText.getText().toString();
             if (fahrenheitTemperatureInText.isEmpty()) {
                 Toast.makeText(this, R.string.empty_fields_text, Toast.LENGTH_SHORT).show();
-            } else if (!fahrenheitTemperatureInText.matches("\\d+")) {
-                Toast.makeText(this, R.string.invalid_data_text, Toast.LENGTH_SHORT).show();
             } else {
-                int fahrenheitTemperature = Integer.parseInt(fahrenheitTemperatureInText);
+                float fahrenheitTemperature = Float.parseFloat(fahrenheitTemperatureInText);
                 float celsiusTemperature = convertFahrenheitToCelsiusTemperature(fahrenheitTemperature);
                 String celsiusTemperatureInText = String.valueOf(celsiusTemperature);
                 celsiusTemperatureTextView.setText(celsiusTemperatureInText + " °C");
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private float convertFahrenheitToCelsiusTemperature(int fahrenheitTemperature) {
+    private float convertFahrenheitToCelsiusTemperature(float fahrenheitTemperature) {
         float celsiusTemperature = fahrenheitTemperature - 32;
         celsiusTemperature = (celsiusTemperature*5)/9;
         return celsiusTemperature;

@@ -4,5 +4,4 @@
     <string name="fahrenheit_temperature_text">Temperatura en °F...</string>
     <string name="convert_to_celsius_temperature_text">Convertir a °C</string>
     <string name="empty_fields_text">No se puede dejar ningún campo vacío.</string>
-    <string name="invalid_data_text">Los datos ingresados son inválidos.</string>
 </resources>
