@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/temperature" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:text="@string/fahrenheit_temperature_input_text"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/fahrenheit_temperature_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:hint="@string/fahrenheit_temperature_text"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/celsius_temperature_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/convert_to_celsius_temperature_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:text="@string/convert_to_celsius_temperature_text"
+        android:textSize="16sp" />
+
+</LinearLayout>
