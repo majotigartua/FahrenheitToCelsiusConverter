@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText fahrenheitTemperatureEditText = findViewById(R.id.fahrenheit_temperature_edittext);
-        TextView celsiusTemperatureTextView = findViewById(R.id.celsius_temperature_textview);
+        EditText fahrenheitTemperatureEditText = findViewById(R.id.fahrenheit_temperature_edit_text);
+        TextView celsiusTemperatureTextView = findViewById(R.id.celsius_temperature_text_view);
         Button convertToCelsiusTemperatureButton = findViewById(R.id.convert_to_celsius_temperature_button);
 
         convertToCelsiusTemperatureButton.setOnClickListener(v -> {
