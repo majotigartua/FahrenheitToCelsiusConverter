@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         TextView celsiusTemperatureTextView = findViewById(R.id.celsius_temperature_textview);
         Button convertToCelsiusTemperatureButton = findViewById(R.id.convert_to_celsius_temperature_button);
 
-        convertToCelsiusTemperatureButton.setOnClickListener(v-> {
+        convertToCelsiusTemperatureButton.setOnClickListener(v -> {
             String fahrenheitTemperatureInText = fahrenheitTemperatureEditText.getText().toString();
             if (fahrenheitTemperatureInText.isEmpty()) {
                 Toast.makeText(this, R.string.empty_fields_text, Toast.LENGTH_SHORT).show();
